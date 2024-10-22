@@ -1,122 +1,166 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background-color: aqua ;
 }
 
-h1 {
-    color: white;
-}
-
-h2, h3 {
-    color: #333;
-}
-
-/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
-    padding: 100px 0;
+    padding: 1%;
     text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-header nav {
-    position: fixed;
-    top: 0;
-    overflow: hidden;
-    background-color: #333;
     width: 100%;
 }
 
-header nav ul {
+nav {
+    background-color: #333;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 2%;
+    width: 70%;
 }
 
-header nav ul li {
-    margin: 0 15px;
+nav ul li {
+    display: inline;
+    margin: 0 2rem;
+    font-size: 1.5rem;
+
 }
 
-header nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
 }
-
-.intro h1 {
-    font-size: 3em;
-    margin: 0;
+h1 {
+    width: 30%;
 }
-
-.intro p {
-    font-size: 1.2em;
+.about {
+    background-image: url(../IMG/programming.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* width: 100vw; */
+    height: 50vh;
+    /* position: relative; */
+    top: 5px;
 }
-
-.button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
+.opacity {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
 }
-
-.button:hover {
-    background-color: #0056b3;
+.aboutMe {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
 }
-
-/* Section Styles */
-section {
-    padding: 50px 20px;
+.container-left {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 5%;
+}
+.container-right {
+    padding-top: 2.4%;
+}
+.container-right img {
+    border-radius: 5%;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
-
-#projects .projects-container {
+.project {
     display: flex;
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 2%;
 }
-
-.project {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 300px;
+.project img {
+    height: 60vh;
 }
-
-.project h3 {
-    color: #007BFF;
+.heading2 {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 2%;
+    text-shadow: 0 0 5px black;
+    text-align: center;
 }
+.skill {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+.skill img {
+    height: 30vh;
+}
+.knowledge ol {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.knowledge ol li {
+    padding: 1%;
+    font-size: 1.5rem;;
+}
+.contact fieldset{
+    width: 80%;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
-/* Footer Styles */
+}
+input,textarea {
+    display: block;
+    width: 30vw;
+    height: 5vh;
+}
+button {
+    width: 30vw;
+    height: 5vh;
+}
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
+    padding: 1%;
     text-align: center;
-    padding: 20px 0;
 }
-
-footer .social-links {
-    list-style-type: none;
-    padding: 0;
+@media only screen and (max-width: 1200px) {
+    header ul li a {
+        font-size: 1rem;
+    }
 }
-
-footer .social-links li {
-    display: inline-block;
-    margin: 0 10px;
+@media only screen and (max-width: 768px) {
+    header h1{
+        display: none;
+    }
+    header nav ul {
+        width: 100%;
+    }
 }
-
-footer .social-links li a {
-    color: white;
-    text-decoration: none;
+@media only screen and (max-width: 575px) {
+    header nav ul li {
+        margin: 1rem;
+    }
 }
