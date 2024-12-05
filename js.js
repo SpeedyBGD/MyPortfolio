@@ -96,22 +96,6 @@ function renderSkills(data) {
   });
 }
 
-// function renderKnowledge(data) {
-//   let knowledge = document.querySelector("#knowledge");
-//   let h2Kn = document.createElement("h2");
-//   h2Kn.classList.add("heading2");
-//   h2Kn.textContent = `${data.descKn}`;
-//   console.log(h2Kn);
-//   knowledge.appendChild(h2Kn);
-//   let lista2 = document.createElement("ol");
-//   data.list.forEach((elem) => {
-//     let li2 = document.createElement("li");
-//     li2.textContent += `${elem}`;
-//     console.log(lista2);
-//     // document.querySelector(".lista2").innerHTML = lista2;
-//   });
-// }
-
 function renderKnowledge(data) {
   let knowledge = document.querySelector("#knowledge");
   let h2Kn = document.createElement("h2");
