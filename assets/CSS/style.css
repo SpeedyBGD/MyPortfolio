@@ -1,169 +1,174 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: aqua ;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: aqua;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1%;
-    text-align: center;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 3;
+  background-color: #333;
+  color: #fff;
+  padding: 1%;
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+#name {
+  width: 30%;
+}
+
+#list {
+  width: 70%;
 }
 
 nav {
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav ul {
-    list-style-type: none;
-    padding: 2%;
-    width: 70%;
+  list-style-type: none;
+  padding: 2%;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 2rem;
-    font-size: 1.5rem;
-
+  display: inline;
+  margin: 0 2rem;
+  font-size: 1.5rem;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
-h1 {
-    width: 30%;
-}
+
 .about {
-    background-image: url(../IMG/programming.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    /* width: 100vw; */
-    height: 50vh;
-    /* position: relative; */
-    top: 5px;
+  background-image: url(../IMG/programming.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* width: 100vw; */
+  height: 50vh;
+  /* position: relative; */
+  top: 5px;
 }
 .opacity {
-    width: 100%;
-    height: 50vh;
-    background-color: black;
-    opacity: 0.5;
-    position: absolute;
+  width: 100%;
+  height: 50vh;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
 }
 .aboutMe {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
 }
 .container-left {
-    color: #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.5rem;
-    gap: 5%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  gap: 5%;
 }
 .container-right {
-    padding-top: 2.4%;
+  padding-top: 2.4%;
 }
 .container-right img {
-    border-radius: 5%;
+  border-radius: 5%;
+  height: 80%;
 }
 .projects {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .project {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2%;
 }
 .project img {
-    height: 60vh;
+  height: 60vh;
 }
 .heading2 {
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 2%;
-    text-shadow: 0 0 5px black;
-    text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 2%;
+  text-shadow: 0 0 5px black;
+  text-align: center;
 }
 .skill {
-    display: flex;
-    justify-content: center;
-    gap: 20%;
+  display: flex;
+  justify-content: center;
+  gap: 20%;
 }
 .skill img {
-    height: 30vh;
+  height: 30vh;
 }
 .knowledge ol {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 .knowledge ol li {
-    padding: 1%;
-    font-size: 1.5rem;;
+  padding: 1%;
+  font-size: 1.5rem;
 }
-.contact fieldset{
-    width: 80%;
+.contact fieldset {
+  width: 80%;
 }
 .contact {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-input,textarea {
-    display: block;
-    width: 30vw;
-    height: 5vh;
+input,
+textarea {
+  display: block;
+  width: 30vw;
+  height: 5vh;
 }
 button {
-    width: 30vw;
-    height: 5vh;
+  width: 30vw;
+  height: 5vh;
 }
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1%;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1%;
+  text-align: center;
 }
 @media only screen and (max-width: 1200px) {
-    header ul li a {
-        font-size: 1rem;
-    }
+  header ul li a {
+    font-size: 1rem;
+  }
 }
 @media only screen and (max-width: 768px) {
-    header h1{
-        display: none;
-    }
-    header nav ul {
-        width: 100%;
-    }
+  header h1 {
+    display: none;
+  }
+  header nav ul {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 575px) {
-    header nav ul li {
-        margin: 1rem;
-    }
+  header nav ul li {
+    margin: 1rem;
+  }
 }

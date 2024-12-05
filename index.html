@@ -1,82 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./assets/CSS/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+  </head>
+  <body>
     <div class="container">
-
-    <header>
-            <nav>
-                <h1>Manojlović Dražen</h1>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#knowlegde">Knowledge</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        
-    </header>
-    <section class="about" id="about">
-        <div class="opacity">
-        </div>
+      <header>
+        <nav>
+          <div id="name"></div>
+          <div id="list"></div>
+        </nav>
+      </header>
+      <section class="about" id="about">
+        <div class="opacity"></div>
         <div class="aboutMe">
-        <div class="container-left">
-            <h2>About me</h2>
-            <p>I am programmer, passionate about chalenging back-end and also front-end projects</p>
+          <div class="container-left"></div>
+          <div class="container-right"></div>
         </div>
-        <div class="container-right">
-            <img src="./assets/IMG/ja.jpg" alt="ja">
-        </div>
-        </div>
-    </section>
+      </section>
 
-    <section class="projects" id="projects">
-        <h2 class="heading2">Projects</h2>
-        <div class="project">
-            <img src="./assets/IMG/edge.png" alt="edge">
-            <img src="./assets/IMG/hrana.png" alt="hrana">
-            <img src="./assets/IMG/jupiter.jpg" alt="jupiter">
-        </div>
-    </section>
-    <section class="skills" id="skills">
+      <section class="projects" id="projects">
+        <div class="project"></div>
+      </section>
+      <section class="skills" id="skills">
         <h2 class="heading2">Skills</h2>
         <div class="skill">
-            <img src="./assets/IMG/html.webp" alt="html">
-            <img src="./assets/IMG/css.webp" alt="css">
+          <img src="./assets/IMG/html.webp" alt="html" />
+          <img src="./assets/IMG/css.webp" alt="css" />
         </div>
-    </section>
-    <section class="knowledge" id="knowlegde">
+      </section>
+      <section class="knowledge" id="knowlegde">
         <h2 class="heading2">Knowledge</h2>
         <ol>
-            <li>Back-end development using PHP and NodeJS</li>
-            <li>Front-end development using JS and RecatJS</li>
-            <li>MySQL and MongoDB</li>
-            <li>Work with animations</li>
+          <li>Back-end development using PHP and NodeJS</li>
+          <li>Front-end development using JS and ReactJS</li>
+          <li>MySQL and MongoDB</li>
+          <li>Work with animations</li>
         </ol>
-    </section>
-    <section class="contact" id="contact">
+      </section>
+      <section class="contact" id="contact">
         <h2 class="heading2">Contact</h2>
         <form action="#">
-            <fieldset>
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" placeholder="subject">
-                <label for="mail">Mail</label>
-                <input type="text" name="mail" id="mail" placeholder="email">
-                <label for="description">Description</label>
-                <textarea name="description" id="description"></textarea>
-                <button>Send Email</button>
-        </fieldset>
+          <fieldset>
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="subject" />
+            <label for="mail">Mail</label>
+            <input type="text" name="mail" id="mail" placeholder="email" />
+            <label for="description">Description</label>
+            <textarea name="description" id="description"></textarea>
+            <button>Send Email</button>
+          </fieldset>
         </form>
-    </section>
-    <footer>&copy; Manojlovic Drazen. 24th of October, 2024</footer>
+      </section>
+      <footer>&copy; Manojlovic Drazen. 24th of October, 2024</footer>
     </div>
-
-</body>
-
+    <script src="js.js"></script>
+  </body>
+</html>
