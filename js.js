@@ -3,7 +3,7 @@ const data = {
     name: "Drazen",
     lastName: "Manojlovic",
   },
-  menu: ["About me", "Projects", "Skills", "Knoledge", "Contact"],
+  menu: ["About me", "Projects", "Skills", "Knowledge", "Contact"],
   about: {
     descJa:
       "I am programmer, passionate about chalenging back-end and also front-end projects",
@@ -13,6 +13,19 @@ const data = {
     descPr: "Projects",
     imgPr: ["edge.png", "hrana.png", "jupiter.jpg"],
   },
+  skills: {
+    descSk: "Skills",
+    imgSk: ["html.webp", "css.webp"],
+  },
+  knowledge: {
+    descKn: "Knowledge",
+    list: [
+      "Back-end development using PHP and NodeJS",
+      "Front-end development using JS and ReactJS",
+      "MySQL and MongoDB",
+      "Work with animations",
+    ],
+  },
 };
 
 function renderName(obj) {
@@ -20,7 +33,6 @@ function renderName(obj) {
   let h1 = document.createElement("h1");
   h1.textContent = `${obj.lastName} ${obj.name}`;
   ime.appendChild(h1);
-  // document.getElementById("name").innerHTML = h1;
 }
 
 function renderMenu(data) {
@@ -67,7 +79,58 @@ function renderProjects(data) {
   });
 }
 
+function renderSkills(data) {
+  let skills = document.querySelector("#skills");
+  let h2Sk = document.createElement("h2");
+  h2Sk.classList.add("heading2");
+  h2Sk.textContent = `${data.descSk}`;
+  skills.appendChild(h2Sk);
+  let skillsContainer = document.createElement("div");
+  skillsContainer.classList.add("skill");
+  skills.appendChild(skillsContainer);
+  data.imgSk.forEach((elem) => {
+    let imgSkills = document.createElement("img");
+    imgSkills.src = `./assets/IMG/${elem}`;
+    imgSkills.alt = elem;
+    skillsContainer.appendChild(imgSkills);
+  });
+}
+
+// function renderKnowledge(data) {
+//   let knowledge = document.querySelector("#knowledge");
+//   let h2Kn = document.createElement("h2");
+//   h2Kn.classList.add("heading2");
+//   h2Kn.textContent = `${data.descKn}`;
+//   console.log(h2Kn);
+//   knowledge.appendChild(h2Kn);
+//   let lista2 = document.createElement("ol");
+//   data.list.forEach((elem) => {
+//     let li2 = document.createElement("li");
+//     li2.textContent += `${elem}`;
+//     console.log(lista2);
+//     // document.querySelector(".lista2").innerHTML = lista2;
+//   });
+// }
+
+function renderKnowledge(data) {
+  let knowledge = document.querySelector("#knowledge");
+  let h2Kn = document.createElement("h2");
+  h2Kn.classList.add("heading2");
+  h2Kn.textContent = data.descKn;
+  knowledge.appendChild(h2Kn);
+  let lista2 = document.createElement("ol");
+  lista2.classList.add("lista2");
+  data.list.forEach((elem) => {
+    let li2 = document.createElement("li");
+    li2.textContent = elem;
+    lista2.appendChild(li2);
+  });
+  knowledge.appendChild(lista2);
+}
+
 renderName(data.info);
 renderMenu(data.menu);
 renderAbout(data.about);
 renderProjects(data.projects);
+renderSkills(data.skills);
+renderKnowledge(data.knowledge);
