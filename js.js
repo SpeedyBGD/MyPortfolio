@@ -40,7 +40,8 @@ function renderMenu(data) {
   data.forEach((elem) => {
     let li = document.createElement("li");
     let aLista = document.createElement("a");
-    aLista.href = `#${elem}`;
+    let href1 = elem.toString().toLowerCase().split(" ").join("");
+    aLista.href = `#${href1}`;
     aLista.textContent = elem;
     aLista.innerHTML = elem;
     li.appendChild(aLista);

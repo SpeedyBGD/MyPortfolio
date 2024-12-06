@@ -83,12 +83,10 @@ nav ul li a {
   font-size: 1.5rem;
   gap: 5%;
 }
-.container-right {
-  padding-top: 2.4%;
-}
+
 .container-right img {
   border-radius: 5%;
-  height: 80%;
+  height: 100%;
 }
 .projects {
   display: flex;
