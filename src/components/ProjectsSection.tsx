@@ -5,36 +5,36 @@ const projects = [
     id: 1,
     title: 'Music App - Pesme za Dušu',
     description: 'Full-stack music application with React frontend and Express backend. Features song search, filtering by genre, sorting by popularity, and user authentication with JWT.',
-    thumbnail: '/images/projects/music-app-screenshot.jpg',
+    thumbnail: '/images/projects/music-app.png',
     githubUrl: 'https://github.com/SpeedyBGD/music-app',
-    liveUrl: 'https://music-app-xi-flame.vercel.app',
+    liveUrl: 'https://music-app-three-gilt.vercel.app/',
     technologies: ['React', 'TypeScript', 'Express', 'SQLite', 'JWT']
   },
   {
     id: 2,
     title: 'SpeedyCleaning',
     description: 'A comprehensive cleaning service application with booking system, service management, and customer portal. Built with modern web technologies for efficient service delivery.',
-    thumbnail: '/images/projects/speedycleaning-screenshot.jpg',
+    thumbnail: '/images/projects/speedycleaning.png',
     githubUrl: 'https://github.com/rilex037/speedycleaning',
-    liveUrl: '#',
+    liveUrl: 'https://www.speedycleaning.rs',
     technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'JavaScript']
   },
   {
     id: 3,
     title: 'SmartKids',
     description: 'An educational platform for children with interactive learning modules, progress tracking, and gamified learning experiences. Designed to make learning fun and engaging for young learners.',
-    thumbnail: '/images/projects/smartkids-screenshot.jpg',
+    thumbnail: '/images/projects/smartkids.png',
     githubUrl: 'https://github.com/SpeedyBGD/smartkids011',
-    liveUrl: '#',
+    liveUrl: 'https://www.smartkids011.rs',
     technologies: ['React', 'JavaScript', 'CSS', 'HTML', 'Education']
   },
   {
     id: 4,
-    title: 'Dr. Miskov Website',
+    title: 'Dr. Misko Paunovic',
     description: 'Professional website for Dr. Miskov with admin panel, API integration, and security features. Built with PHP backend and modern frontend technologies for healthcare professionals.',
-    thumbnail: '/images/projects/drmiskov-screenshot.jpg',
+    thumbnail: '/images/projects/drmpaunovic.png',
     githubUrl: 'https://github.com/SpeedyBGD/drmpaunovic',
-    liveUrl: '#',
+    liveUrl: 'https://www.drmpaunovic.rs',
     technologies: ['PHP', 'HTML', 'JavaScript', 'Security', 'Admin Panel']
   },
   {
