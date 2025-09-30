@@ -15,7 +15,7 @@ export default function HeroSection() {
           </h2>
           
           <p className="text-base sm:text-lg text-gray-900 leading-relaxed max-w-lg">
-            I specialize in building exceptional digital experiences. Currently, I&apos;m focused on improving my skills in software engineering and frontend development.
+            I&apos;m a software engineer specialized in frontend development, building scalable and modern web applications.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
