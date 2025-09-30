@@ -7,7 +7,7 @@ export default function HeroSection() {
         {/* Left side - Text content */}
         <div className="space-y-6">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800">
-            Hi, I'm <span className="text-blue-600">Drazen Manojlovic</span>
+            Hi, I&apos;m <span className="text-blue-600">Drazen Manojlovic</span>
           </h1>
           
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800">
@@ -15,7 +15,7 @@ export default function HeroSection() {
           </h2>
           
           <p className="text-base sm:text-lg text-gray-900 leading-relaxed max-w-lg">
-            I specialize in building exceptional digital experiences. Currently, I'm focused on improving my skills in software engineering and frontend development.
+            I specialize in building exceptional digital experiences. Currently, I&apos;m focused on improving my skills in software engineering and frontend development.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-4">

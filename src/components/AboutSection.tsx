@@ -34,7 +34,7 @@ export default function AboutSection() {
           <div className="space-y-4 sm:space-y-6 order-last lg:order-first">
             <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
               I have a background in Civil Engineering with 22 years of experience in the construction industry. 
-              I transitioned to software engineering in 2023, and since then I've been focused on building 
+              I transitioned to software engineering in 2023, and since then I&apos;ve been focused on building 
               web applications and expanding my skill set.
             </p>
             
