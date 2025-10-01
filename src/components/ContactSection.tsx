@@ -75,7 +75,7 @@ export default function ContactSection() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white placeholder-black text-sm sm:text-base"
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white placeholder-black text-black text-sm sm:text-base"
               placeholder="Your name"
             />
           </div>
@@ -91,7 +91,7 @@ export default function ContactSection() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white placeholder-black text-sm sm:text-base"
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white placeholder-black text-black text-sm sm:text-base"
               placeholder="your.email@example.com"
             />
           </div>
@@ -107,7 +107,7 @@ export default function ContactSection() {
               onChange={handleChange}
               required
               rows={6}
-              className="w-full px-4 py-3 border-2 border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white placeholder-black resize-none"
+              className="w-full px-4 py-3 border-2 border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white placeholder-black text-black resize-none"
               placeholder="Your message here..."
             />
           </div>
