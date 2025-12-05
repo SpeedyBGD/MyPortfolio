@@ -78,7 +78,7 @@ export default function ProjectsSection() {
   }, []);
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 text-center mb-8 sm:mb-12 lg:mb-16">Projects</h2>
         
@@ -114,11 +114,11 @@ export default function ProjectsSection() {
                 </a>
               ) : (
                 <div className="h-40 sm:h-48 bg-gray-200 flex items-center justify-center relative">
-                  <Image
-                    src={project.thumbnail}
-                    alt={`${project.title} screenshot`}
-                    width={400}
-                    height={300}
+                <Image
+                  src={project.thumbnail}
+                  alt={`${project.title} screenshot`}
+                  width={400}
+                  height={300}
                     className="w-full h-full object-cover transition-all duration-300"
                   />
                 </div>
@@ -139,8 +139,8 @@ export default function ProjectsSection() {
                       width={500}
                       height={375}
                       className="w-full h-full object-cover"
-                    />
-                  </div>
+                />
+              </div>
                 </div>
               )}
               
@@ -176,14 +176,14 @@ export default function ProjectsSection() {
                     GitHub
                   </a>
                   {hasValidUrl && (
-                    <a 
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-800 font-medium"
-                    >
-                      Live Demo
-                    </a>
+                  <a 
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    Live Demo
+                  </a>
                   )}
                 </div>
               </div>
