@@ -1,8 +1,18 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function ContactSection() {
+  // Fire conversion event when contact page loads
+  useEffect(() => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-17797662774/3KNECKvF9s8bELaQy6ZC',
+        'value': 1.0,
+        'currency': 'USD'
+      });
+    }
+  }, []);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
